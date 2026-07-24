@@ -1,0 +1,13 @@
+[project]
+name = "vllm-caching"
+version = "0.1.0"
+description = "Measure and optimize vLLM cold starts for GPT-OSS-20B"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+server = [
+    "instanttensor==0.1.9",
+    "vllm>=0.25.1,<0.26",
+]
